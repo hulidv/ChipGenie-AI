@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chipgenie-ai"
+version = "0.1.0"
+description = "AI-powered PCB design assistant (spec parsing, BOM, schematic stubs)"
+authors = [{name = "hulidv"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "pydantic>=2.6",
+    "sqlmodel>=0.0.22",
+    "pandas>=2.2",
+    "langchain>=0.1",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+chipgenie = "chipgenie.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chipgenie"]
