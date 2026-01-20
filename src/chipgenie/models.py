@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Union
 from pydantic import BaseModel, Field
 
 
@@ -25,7 +25,7 @@ class Component(BaseModel):
     mpn: str
     name: str
     type: str
-    params: Dict[str, float | str]
+    params: Dict[str, Union[float, str]]
     footprint: Optional[str] = None
     supplier_url: Optional[str] = None
     cost: Optional[float] = None
@@ -41,7 +41,7 @@ class BomLine(BaseModel):
 class ParsedSpec(BaseModel):
     intent: str
     constraints: DesignConstraint
-    requirements: Dict[str, float | str]
+    requirements: Dict[str, Union[float, str]]
     notes: Optional[str] = None
 
 
