@@ -1,0 +1,56 @@
+[
+  {
+    "mpn": "TLV70033DBVT",
+    "name": "3.3V LDO Regulator",
+    "type": "regulator",
+    "params": {"vin_max": 5.5, "vout": 3.3, "iout_max": 0.3, "noise": "low"},
+    "footprint": "SOT-23-5",
+    "supplier_url": "https://www.ti.com/product/TLV70033",
+    "cost": 0.25
+  },
+  {
+    "mpn": "AP2112K-3.3",
+    "name": "3.3V LDO Regulator",
+    "type": "regulator",
+    "params": {"vin_max": 6.0, "vout": 3.3, "iout_max": 0.6, "noise": "standard"},
+    "footprint": "SOT-23-5",
+    "supplier_url": "https://www.diodes.com/part/view/AP2112",
+    "cost": 0.18
+  },
+  {
+    "mpn": "TPS7A2018",
+    "name": "1.8V LDO Regulator",
+    "type": "regulator",
+    "params": {"vin_max": 6.0, "vout": 1.8, "iout_max": 0.3, "noise": "low"},
+    "footprint": "SOT-23-5",
+    "supplier_url": "https://www.ti.com/product/TPS7A20",
+    "cost": 0.35
+  },
+  {
+    "mpn": "CRCW060310K0FKEAC",
+    "name": "Resistor 10k 1% 0603",
+    "type": "resistor",
+    "params": {"resistance": 10000, "tolerance": "1%", "power": 0.1},
+    "footprint": "0603",
+    "supplier_url": "https://www.vishay.com/",
+    "cost": 0.01
+  },
+  {
+    "mpn": "GRM188R61C105KA93D",
+    "name": "Capacitor 1uF 16V X5R 0603",
+    "type": "capacitor",
+    "params": {"capacitance": 1e-6, "voltage": 16, "dielectric": "X5R"},
+    "footprint": "0603",
+    "supplier_url": "https://www.murata.com/",
+    "cost": 0.02
+  },
+  {
+    "mpn": "C3216X5R1C106K160AC",
+    "name": "Capacitor 10uF 16V X5R 1206",
+    "type": "capacitor",
+    "params": {"capacitance": 1e-5, "voltage": 16, "dielectric": "X5R"},
+    "footprint": "1206",
+    "supplier_url": "https://product.tdk.com/",
+    "cost": 0.05
+  }
+]
